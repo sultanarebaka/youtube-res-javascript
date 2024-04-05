@@ -1,70 +1,746 @@
-.menu-container {
-    position: relative; /* Needed for menu positioning */
-  }
-  
-  .menu-btn {
-    width: 40px;
-    height: 40px;
-    background: none;
-    border: none;
-    cursor: pointer; /* Shows hover hand cursor */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .menu-btn span {
-    width: 100%;
-    height: 5px;
-    background-color: #333;
-    transition: all 0.4s ease;
-  }
-  
-  .menu {
-    position: absolute; /* Positions the menu off-screen */
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: white; /* Customize background color */
-    display: none; /* Initially hides the menu */
-  }
-  
-  .menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black; /* Customize text color */
-  }
-  
-  .menu-container.show-menu .menu {
-    display: block; /* Shows the menu on click */
-  }
-  
-  .menu-container.show-menu .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  .menu-container.show-menu .bar2 {
-    opacity: 0;
-  }
-  
-  .menu-container.show-menu .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
-  .ssh-im{
-    width: 20px;
-    height: 20px;
-  }
-  .ssu-im{
-    width: 20px;
-    height: 20px;
-  }
-  .bo{
-    border-bottom: 2.1px solid;
-    border-color:yellow;
-    inline-size: 60px;
-    margin-left: 2px;
-    padding-top: 30px;  
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 12px;
 }
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.img-yo{
+  width: 110px;
+  height: 34px;
+  padding-left: 18px;
+}
+.topnav .search-container {
+  float: right;
+}
+.se{
+  width: 520px;
+  height: 30px;
+  padding: 3px 16px;
+  font-size: 15px;
+  font-weight: 550;
+  border-radius: 28px 28px 28px 28px;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 40px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 5px;
+  margin-top: 1px;
+  margin-right: 6px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.ai{
+  display: flex;
+  flex-direction: row;
+}
+.search-container{
+  display: flex;
+  flex-direction: row;
+  padding-left: 160px;
+  padding-top: 2px;
+}
+.co{
+  display: flex;
+}
+.yy{
+  display: flex;
+  flex-direction: row;
+}
+.cu{
+  display: flex;
+  padding-left: 8px;
+}
+.hho{
+  padding-top: 5px;
+}
+.image-shh{
+width: 20px;
+height: 20px;
+}
+.bu{
+  width: 57px;
+  height: 40px;
+}
+.create-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 56px;
+}
+
+.img-cr {
+  width: 19px;
+  height: 16px;
+}
+.ssss{
+  padding-top: 6px;
+}
+
+#image-menu {
+  cursor: pointer;
+  /* Add any other styles for the image */
+  width: 20px;
+  height: 20px;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+#options-container {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#options-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#options-container li {
+  margin-bottom: 5px;
+}
+.img-ssii{
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+.as{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 12px;
   
+}
+.button2l{
+  border-radius: 25px 25px 25px 25px;
+  width: 92px;
+  height: 32px;
+  padding-top: 5px;
+  border-color: 4px solid black;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.button2l:hover{
+  transition: .5s all;
+  background-color:#B9E9FC;
+}
+.img-ssii:hover{
+background-color: #B9E9FC;
+}
+.fa-home{
+  padding-top: 0px;
+}
+.img--sh{
+  width: 20px;
+  height: 20px;
+}
+.img--vcc{
+  width: 20px;
+  height: 20px;
+}
+.img--youu{
+  width: 20px;
+  height: 20px;
+}
+.img--hist{
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.microphone {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: #DDDDDD;
+  border-radius: 26px 26px 26px 26px;
+}
+.microphone:before,
+.microphone:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.microphone:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.fa-microphone{
+  padding-top: 20px;
+  padding-left: 11px;
+  width: 30px;
+}
+.button-container {
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  margin: 0px;
+}
+
+.fo{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gih{
+  padding-top: 7px;
+
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap videos if they overflow the container */
+  border-radius: 26px 26px 26px 26px;
+  padding-top: 11px;
+}
+.video-container video{
+  border-radius: 27px 27px 27px 27px;
+}
+.video-item {
+  width: 370px;
+  height: 210px;
+}
+.video-item-1 {
+  width: 370px;
+  height: 210px;
+}
+.video-item-2 {
+  width: 370px;
+  height: 210px;
+  margin: 1px; /* Add some margin between videos */
+}
+.suur-im{
+  width: 300px;
+  height: 300px;
+}
+.img-zuu{
+  width: 30px;
+  height: 30px;
+  border-radius: 8px 8px 8px 8px;
+}
+.vi-in{
+  display: flex;
+}
+.vi-inn{
+  display: flex;
+}
+.vi-innn{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.video-container-3 {
+  display: flex;
+  flex-wrap: wrap; /* Wrap videos if they overflow the container */
+  border-radius: 26px 26px 26px 26px;
+  padding-top: 22px;
+}
+.video-container-3 video{
+  border-radius: 27px 27px 27px 27px;
+}
+.video-item-3 {
+  width: 370px;
+  height: 210px;
+  margin: 1px; /* Add some margin between videos */
+}
+.video-item-4 {
+  width: 370px;
+  height: 210px;
+  margin: 1px; /* Add some margin between videos */
+}
+.video-item-5 {
+  width: 370px;
+  height: 210px;
+  margin: 1px; /* Add some margin between videos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttono {
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.8s;
+  cursor: pointer;
+  font-weight: 550;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button1:hover {
+  background-color:#DDDDDD;
+  color: black;
   
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button2:hover {
+  background-color:#DDDDDD;
+  color: black;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button3:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button4:hover {background-color: #DDDDDD;
+  color: black;
+
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button5:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+.button6 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+ 
+
+.button6:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+.button7 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button7:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+.button8 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button8:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+.button9 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button9:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+.button10 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button10:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+
+.button11 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button11:hover {
+  background-color: #DDDDDD;
+  color: black;
+
+}
+.button12{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button12:hover {
+  background-color: #DDDDDD;
+  color: black;
+
+}
+.button13 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.button13:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+.button14 {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+
+}
+
+.button14:hover {
+  background-color: #DDDDDD;
+  color: black;
+
+}
+.vvc{
+  padding-top: 9px;
+}
+.yoou{
+  padding-top: 9px;
+}
+.hi{
+  padding-top: 9px;
+}
