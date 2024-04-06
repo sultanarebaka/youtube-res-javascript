@@ -94,15 +94,19 @@
   padding-left: 8px;
 }
 .hho{
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .image-shh{
 width: 20px;
 height: 20px;
+padding-left: 8px;
 }
 .bu{
   width: 57px;
   height: 40px;
+}
+i{
+  padding-left: 8px;
 }
 .create-container {
   display: flex;
@@ -116,7 +120,7 @@ height: 20px;
   height: 16px;
 }
 .ssss{
-  padding-top: 6px;
+  padding-top: 10px;
 }
 
 #image-menu {
@@ -155,7 +159,6 @@ height: 20px;
   flex-direction: row;
   padding-left: 20px;
   padding-top: 12px;
-  
 }
 .button2l{
   border-radius: 25px 25px 25px 25px;
@@ -184,14 +187,17 @@ background-color: #B9E9FC;
 .img--vcc{
   width: 20px;
   height: 20px;
+  padding-left: 8px;
 }
 .img--youu{
   width: 20px;
   height: 20px;
+  padding-left: 8px;
 }
 .img--hist{
   width: 20px;
   height: 20px;
+  padding-left: 8px;
 }
 
 
@@ -375,6 +381,7 @@ background-color: #B9E9FC;
   flex-wrap: wrap; /* Wrap videos if they overflow the container */
   border-radius: 26px 26px 26px 26px;
   padding-top: 11px;
+
 }
 .video-container video{
   border-radius: 27px 27px 27px 27px;
@@ -386,11 +393,11 @@ background-color: #B9E9FC;
 .video-item-1 {
   width: 370px;
   height: 210px;
+  padding-left: 10px;
 }
 .video-item-2 {
   width: 370px;
   height: 210px;
-  margin: 1px; /* Add some margin between videos */
 }
 .suur-im{
   width: 300px;
@@ -422,29 +429,26 @@ background-color: #B9E9FC;
 
 
 
-.video-container-3 {
+.video-container-3  {
   display: flex;
   flex-wrap: wrap; /* Wrap videos if they overflow the container */
   border-radius: 26px 26px 26px 26px;
   padding-top: 22px;
 }
-.video-container-3 video{
+.video-container-3 .loa{
   border-radius: 27px 27px 27px 27px;
 }
 .video-item-3 {
   width: 370px;
   height: 210px;
-  margin: 1px; /* Add some margin between videos */
 }
 .video-item-4 {
   width: 370px;
   height: 210px;
-  margin: 1px; /* Add some margin between videos */
 }
 .video-item-5 {
   width: 370px;
   height: 210px;
-  margin: 1px; /* Add some margin between videos */
 }
 
 
@@ -737,9 +741,11 @@ background-color: #B9E9FC;
 }
 .vvc{
   padding-top: 9px;
+  padding-right: 7px;
 }
 .yoou{
   padding-top: 9px;
+  padding-left: 6px;
 }
 .hi{
   padding-top: 9px;
